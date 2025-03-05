@@ -1,3 +1,8 @@
+# NAMA:   MUH WAHYUDI
+# NIM:    240907501010
+# KELAS:  A 
+
+
 # // Task
 
 # 91 - 100 = A 
@@ -27,7 +32,7 @@ I = list(range(51,56))
 J = list(range(46,51))
 K = list(range(41,51))
 L = list(range(41))
-nilai =int(input("masukkan nilai"))
+nilai =int(input("masukkan nilai: "))
 if (nilai in A):
     print("nilai anda pada semester ini adalah: A")
     print("anda LULUS")
