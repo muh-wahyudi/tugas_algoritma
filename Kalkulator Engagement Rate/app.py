@@ -12,8 +12,8 @@ def index():
             shares = int(request.form["shares"])
             followers = int(request.form["followers"])
 
-            if followers == 0:
-                return "followers tidak boleh 0!"
+            if followers == 0: #menambahkan halaman jika followers yang dimasukkan 0
+                return render_template('followers_0.html')
 
              # hitung Egagment Rate
             er = ((likes + comments + shares) / followers) *100
