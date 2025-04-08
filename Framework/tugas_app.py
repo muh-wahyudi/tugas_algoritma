@@ -17,7 +17,7 @@ def about_me():
     return render_template('about.html')
 
 
-@app.route("/beranda/user/")
+@app.route("/beranda/users/")
 def users():
     user_list = ["denis", "toufik", "raha", "arjun"]
     return render_template('users.html', users=user_list)
