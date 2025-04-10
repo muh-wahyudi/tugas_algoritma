@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Pengguna menggunakan if</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='users.css') }}">
+</head>
+<body>
+    <h1>Daftar Pengguna </h1>
+    <ul>
+        {% if users %}
+            {% for user in users %}
+                <li>{{ user }}</li>
+            {% endfor %}
+        {% else %}
+            <p>Tidak ada pengguna.</p>
+        {% endif %}
+    </ul>
+</body>
+</html>

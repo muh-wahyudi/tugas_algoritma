@@ -43,14 +43,21 @@ def data():
     user = {"name": "wahyudi", "age": 19, "city": "makassar"}
     return render_template('data.html', user=user)
 
-
-@app.route("/beranda/users/")
+# website menggunakan for loop untuk menampilakn dalam html
+@app.route("/my_name_user/")
 def users():
     user_list = ["denis", "toufik", "raha", "arjun"]
     return render_template('users.html', users=user_list)
 
+#website menggunakan if statement untuk menampilkan kondisi tertentu di dalam HTML
+@app.route("/my_name_user_if/")
+def user_if():
+    user_list = []
+    return render_template('user_if.html', users=user_list)
 
-@app.route('/beranda/mahasiswa/')
+
+# website mengabungkan for dengan if-elif-else
+@app.route("/my_name_gabung")
 def mahasiswa():
     daftar_mahasiswa = [
         {"nama": "denis", "nilai": 92},
